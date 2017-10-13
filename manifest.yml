@@ -15,4 +15,4 @@ applications:
   path: .
   command: node app.js
   services:
-  - mongodb-polls
+  - Cloudant-NoSQL-DB-Feedback-JUL
