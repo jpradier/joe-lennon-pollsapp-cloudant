@@ -1,0 +1,18 @@
+---
+declared_services:
+- mongodb-polls: #Identifier for Mongodb Bound Service instance
+  label: mongodb
+  provider: core
+  version: '2.2'
+  plan: '100'
+
+
+applications:
+- name: polls
+  mem: 256M
+  instances: 1
+  host: polls-${random-word}
+  path: .
+  command: node app.js
+  services:
+  - mongodb-polls

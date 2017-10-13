@@ -6,6 +6,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var fs = require('fs');
 
 var app = express();
 //var io = require('socket.io').listen(server);
@@ -41,8 +42,4 @@ server.listen(app.get('port'), function(){
 	console.log('Express server listening on port ' + app.get('port')); 
 });
 
-
-server.listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
 //module.exports = app;

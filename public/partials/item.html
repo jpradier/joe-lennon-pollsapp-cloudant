@@ -11,7 +11,7 @@
 	<form role="form" ng-submit="vote()">
 		<div ng-repeat="choice in poll.choices" class="radio">
 			<label>
-				<input type="radio" name="choice" ng-model="poll.userVote" value="{{choice._id}}">
+				<input type="radio" name="choice" ng-model="poll.userVote" value="{{$index}}">
 				{{choice.text}}
 			</label>
 		</div>

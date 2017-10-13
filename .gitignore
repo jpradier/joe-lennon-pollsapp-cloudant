@@ -1,1 +1,9 @@
 node_modules
+
+// Eclipse file
+.project
+.settings
+.tern-project
+
+// Bluemix
+vcap-local.json
